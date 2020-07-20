@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+
+	 <title>E-Complaint Portal</title>
+  
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <h1 class="text-light"><span>E-Complaint Portal</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/students-portal">Student Portal</a></li>
+            <li><a href="/faculity-portal">Faculity Portal</a></li>
+              
+            
+
+            
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div><!-- End Header Container -->
+    </div>
+  </header>
+  
+<section id="hero" class="d-flex align-items-center">
+  
+  <!-- ======= Hero Section ======= -->
+  
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>Your Every  Complaints Will Be Entertain Here!</h1>
+      
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+ 
+  <main id="main">
+
+    
+{% for message in messages %}
+    	<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Message:</strong> {{message}}.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title " data-aos="fade-right">
+              <h2>About Us</h2>
+              </div>
+            <h3 class="text-left">E-Complaint Portal is Platform For Students Who Face Issues In 
+            <span>LGU and Want To Register Them .<span></h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Lahore Garrison universities do not provide any facility for students that make them feel free for complaining about their issues they are facing in their university. Sometimes some issues are beyond tolerance, which needs to be reach to authorities, which may even be helpful in the betterment of university. So, for that purpose our web application is very useful and it provide ease, comfort, freely and friendly way to complain about their issues
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> It will provide ease to students to register their complaints from anywhere or anytime.</li>
+              <li><i class="ri-check-double-line"></i> 	It will help student to speak freely about their issues without any fear. </li>
+              <li><i class="ri-check-double-line"></i>The Complaint Can	either be <b>General</b> or <b>Harassed</b></li>
+              <li><i class="ri-check-double-line"></i> You Can Track Your complain</li>
+            </ul>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Our Purpose:</h3>
+              <p>
+                In Lahore Garrison university students face difficulties in solving their issues they do not even get a chance to speak about their complaints that they are facing in our daily routine. Complaints can be about any Area of University like regarding cafe, faculty, exam, accounts etc
+                 E-Complaint Portal is an online complaint portal for the students of Lahore Garrison University where they can post their complaint.
+              </p>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bxl-bootstrap"></i>
+                    <h4>Betterment of University</h4>
+                    <p class="">E-Complaint Portal will  help the University To Enhance the Quality of Their University WHich Lead them to Betterment.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bxs-x-circle"></i>
+                    <h4>Minimize The Faculity Fear.</h4>
+                    <p>E-Complaint Portal will minimize the usage of power of faculty/staff in wrong way.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="64" height="64"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><defs><linearGradient x1="110.1875" y1="61.8125" x2="110.1875" y2="78.30569" gradientUnits="userSpaceOnUse" id="color-1_44786_gr1"><stop offset="0" stop-color="#d9f7ee"></stop><stop offset="1" stop-color="#2df19b"></stop></linearGradient><linearGradient x1="86" y1="19.7155" x2="86" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-2_44786_gr2"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="86" y1="19.70744" x2="86" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-3_44786_gr3"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="64.5" y1="19.70744" x2="64.5" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-4_44786_gr4"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="86" y1="19.70744" x2="86" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-5_44786_gr5"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="107.5" y1="19.70744" x2="107.5" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-6_44786_gr6"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="61.8125" y1="19.70744" x2="61.8125" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-7_44786_gr7"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="61.8125" y1="19.70744" x2="61.8125" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-8_44786_gr8"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="59.125" y1="19.70744" x2="59.125" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-9_44786_gr9"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="56.4375" y1="19.70744" x2="56.4375" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-10_44786_gr10"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="110.1875" y1="19.70744" x2="110.1875" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-11_44786_gr11"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="123.625" y1="19.70744" x2="123.625" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-12_44786_gr12"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="48.375" y1="19.70744" x2="48.375" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-13_44786_gr13"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient><linearGradient x1="106.15625" y1="19.70744" x2="106.15625" y2="153.37294" gradientUnits="userSpaceOnUse" id="color-14_44786_gr14"><stop offset="0" stop-color="#7de3c3"></stop><stop offset="1" stop-color="#0ba360"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M129,75.25c0,1.4835 -1.204,2.6875 -2.6875,2.6875h-32.25c-1.4835,0 -2.6875,-1.204 -2.6875,-2.6875v-10.75c0,-1.4835 1.204,-2.6875 2.6875,-2.6875h32.25c1.4835,0 2.6875,1.204 2.6875,2.6875z" fill="url(#color-1_44786_gr1)"></path><path d="M147.8125,112.875h-2.6875v-83.87419c0,-2.279 -1.38944,-4.257 -3.53406,-5.03638c-2.15537,-0.78744 -4.49619,-0.15856 -5.97162,1.59637l-4.54994,5.43144c-0.70144,0.8385 -1.59637,0.96213 -2.06938,0.96213c-0.473,0 -1.36794,-0.12631 -2.06938,-0.96213l-5.54431,-6.61125c-1.44319,-1.72806 -3.56363,-2.7735 -5.81844,-2.87831c-2.279,-0.11019 -4.46662,0.74981 -6.06031,2.34081l-7.8045,7.75881c-0.54019,0.5375 -1.19325,0.77937 -2.02906,0.78206c-0.76325,-0.03762 -1.45394,-0.37625 -1.94306,-0.95944l-5.54431,-6.61394c-1.53725,-1.83556 -3.78937,-2.88638 -6.18662,-2.88638c-2.39725,0 -4.64938,1.0535 -6.18931,2.88369l-5.54431,6.61662c-0.48912,0.58319 -1.17712,0.92181 -1.94306,0.95675c-0.83312,0.00269 -1.48887,-0.24725 -2.02906,-0.78206l-7.8045,-7.75881c-1.59638,-1.591 -3.77325,-2.45637 -6.063,-2.34081c-2.25481,0.10481 -4.37525,1.15294 -5.81844,2.87562l-5.54431,6.61394c-0.70144,0.8385 -1.59638,0.96213 -2.06938,0.96213c-0.473,0 -1.36794,-0.12631 -2.06938,-0.96213l-4.54456,-5.43144c-1.47544,-1.75494 -3.81894,-2.39188 -5.97162,-1.59637c-2.14463,0.78206 -3.53406,2.76006 -3.53406,5.03906v83.87419h-2.6875c-4.44513,0 -8.0625,3.62812 -8.0625,8.08131v10.75c0,4.43975 3.61737,8.04369 8.0625,8.04369h123.625c4.44512,0 8.0625,-3.60394 8.0625,-8.04369v-10.75c0,-4.45319 -3.61737,-8.08131 -8.0625,-8.08131zM36.81069,34.44569c1.53994,1.83288 3.79206,2.88369 6.18931,2.88369c2.39725,0 4.64937,-1.0535 6.18931,-2.88369l5.54431,-6.61662c0.48913,-0.58319 1.17712,-0.92181 1.94306,-0.95675c0.78744,-0.00269 1.48619,0.24456 2.02906,0.78206l7.8045,7.75881c1.59637,1.58831 3.75175,2.40531 6.063,2.34081c2.25481,-0.10481 4.37525,-1.15294 5.81844,-2.87562l5.54431,-6.61394c0.70144,-0.8385 1.59637,-0.96213 2.06937,-0.96213c0.473,0 1.36794,0.12631 2.06938,0.96213l5.54431,6.61125c1.44319,1.72806 3.56363,2.7735 5.81844,2.87831c2.27362,0.06719 4.46931,-0.7525 6.063,-2.34081l7.8045,-7.75881c0.54287,-0.5375 1.24431,-0.74175 2.02906,-0.78206c0.76325,0.03762 1.45394,0.37625 1.94306,0.95944l5.54431,6.61394c1.52919,1.83288 3.78131,2.88369 6.17856,2.88369c2.39725,0 4.64937,-1.0535 6.18931,-2.88369l4.56069,-5.44487v105.37419h-107.5l0.01075,-105.36613zM21.5,131.70631v-10.75c0,-1.48619 1.204,-2.70631 2.6875,-2.70631h2.6875v16.125h-2.6875c-1.4835,0 -2.6875,-1.19325 -2.6875,-2.66869zM150.5,131.70631c0,1.47544 -1.204,2.66869 -2.6875,2.66869h-2.6875v-16.125h2.6875c1.4835,0 2.6875,1.22012 2.6875,2.70631z" fill="url(#color-2_44786_gr2)"></path><path d="M26.875,145.125h118.25v5.375h-118.25z" fill="url(#color-3_44786_gr3)"></path><path d="M59.125,112.875h10.75v5.375h-10.75z" fill="url(#color-4_44786_gr4)"></path><path d="M75.25,112.875h21.5v5.375h-21.5z" fill="url(#color-5_44786_gr5)"></path><path d="M102.125,112.875h10.75v5.375h-10.75z" fill="url(#color-6_44786_gr6)"></path><path d="M43,61.8125h37.625v5.375h-37.625z" fill="url(#color-7_44786_gr7)"></path><path d="M43,72.5625h37.625v5.375h-37.625z" fill="url(#color-8_44786_gr8)"></path><path d="M43,83.3125h32.25v5.375h-32.25z" fill="url(#color-9_44786_gr9)"></path><path d="M43,94.0625h26.875v5.375h-26.875z" fill="url(#color-10_44786_gr10)"></path><path d="M91.375,83.3125h37.625v5.375h-37.625z" fill="url(#color-11_44786_gr11)"></path><path d="M118.25,112.875h10.75v5.375h-10.75z" fill="url(#color-12_44786_gr12)"></path><path d="M43,112.875h10.75v5.375h-10.75z" fill="url(#color-13_44786_gr13)"></path><path d="M91.375,94.0625h29.5625v5.375h-29.5625z" fill="url(#color-14_44786_gr14)"></path></g></g></svg>
+                    <h4>Check And Balance</h4>
+                    <p>E-Complaint Portal help students to have check and Balance each of their complaints.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+          <h3>Call To Action</h3>
+          <p> Login To Start Your Work!.</p>
+          <a class="cta-btn" href="/students-portal">Student Portal</a>
+          <a class="cta-btn" href="/faculity-portal" style="margin-left:5px; ">Faculity Portal</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Services</h2>
+              <p class="text-justify">As there is need and make student secure it is necessary to make students free to speak up and complain about their problems and our system provide such platform for students to speak up freely. This system can be used by any university. The main objective of this system is to make an institute secure, better and to provide students confidence that their problems can resolve and they are studding in a secure and student friendly institute..</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon"><i class="bx bx-map"></i></div>
+                  <h4><a href="">Track Complaint</a></h4>
+                  <p>You Can Track Your Complaint Status From AnyWhere.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon"><i class="bx bx-mail-send"></i></div>
+                  <h4><a href="">Email Notification</a></h4>
+                  <p>Students And The Authority Personals When Complaint Gets Solved Or They Get a New Complaint.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon"><i class="bx bxs-hourglass-top"></i></div>
+                  <h4><a href="">Filteration Of Complaints</a></h4>
+                  <p>The Valid Complaints Will be Filterout And Send By The Complaint Cordinator.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon"><i class="bx bxs-filter-alt"></i></div>
+                  <h4><a href="">Time Limitation</a></h4>
+                  <p>Cordinator And The Authority Personals Have To Solve The Complaint In Given Time Limit.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Team</h2>
+              <p>Our Team Involves dedicated Personals Having Great  Grip On Their
+               Skills Set.</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{% static 'assets/img/team/sami.JPG' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Sameer Iqbal</h4>
+                    <span>Python/Django Developer</span>
+                    
+                    <div class="social">
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-mail-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="{% static 'assets/img/team/moiz.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Moiz Ansar</h4>
+                    <span>Front End Developer</span>
+                    
+                    
+                    <div class="social">
+                      
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-mail-fill"></i> </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact</h2>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.1946632914783!2d74.44066491448201!3d31.46383088138836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908dd6138ade3%3A0xa6cc469044e1fbc1!2sLahore+Garrison+University!5e0!3m2!1sen!2s!4v1464852590107" frameborder="0" allowfullscreen></iframe>
+            <div class="info mt-4">
+              <i class="icofont-google-map"></i>
+              <h4>Location:</h4>
+              <p>Main Campus
+                Sector C, DHA Phase-VI Lahore</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p> treasurer@lgu.edu.pk</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="icofont-phone"></i>
+                  <h4>Call:</h4>
+                  <p>042-37181821-22</p>
+                </div>
+              </div>
+            </div>
+
+            <form action="{%url 'home' %}" method="post" role="form" class="php-email-form mt-4">
+            {% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+          
+
+          
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Lahore Garrison University</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js ' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
